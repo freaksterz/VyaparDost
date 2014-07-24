@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
+<%@ taglib uri="/struts-tags" prefix="s" %>  
 
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,12 @@
                         <h3 class="panel-title">Please Log In</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form">
+                        <s:form action="loginprocess" theme="">  
+   							<s:textfield name="username" label="Name"></s:textfield>  
+							<s:password name="userpass" label="Password"></s:password>  
+							<s:submit value="login"></s:submit>    
+						</s:form>  
+                        <!-- <form role="form">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Username" name="username" type="email" autofocus>
@@ -45,10 +50,10 @@
                                     </label>
                                     <label>Forgot password</label>
                                 </div>
-                                <!-- Change this to a button or input when using this as a form -->
+                                Change this to a button or input when using this as a form
                                 <a href="home.jsp" class="btn btn-lg btn-success btn-block">Login</a>
                             </fieldset>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>
