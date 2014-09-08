@@ -23,42 +23,19 @@
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Please Log In</h3>
-                    </div>
-                    <div class="panel-body">
-                        <s:form action="loginprocess" theme="">  
-   							<s:textfield name="username" label="Name"></s:textfield>  
-							<s:password name="userpass" label="Password"></s:password>  
-							<s:submit value="login"></s:submit>    
-						</s:form>  
-                        <!-- <form role="form">
-                            <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Username" name="username" type="email" autofocus>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
-                                    </label>
-                                    <label>Forgot password</label>
-                                </div>
-                                Change this to a button or input when using this as a form
-                                <a href="home.jsp" class="btn btn-lg btn-success btn-block">Login</a>
-                            </fieldset>
-                        </form> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <s:form theme="simple" cssClass="well form-search">
+    <s:textfield
+            placeholder="Login"
+            name="login"
+            tooltip="Enter your Name here"/>
+
+    <s:password
+            placeholder="Password"
+            name="password"/>
+
+    <s:submit cssClass="btn btn-primary"/>
+</s:form>
+            
 
     <!-- Core Scripts - Include with every page -->
     <script src="../assets/js/jquery-1.10.2.js"></script>
