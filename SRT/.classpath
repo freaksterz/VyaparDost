@@ -8,11 +8,6 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk7">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Struts2">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
@@ -28,12 +23,12 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/freemarker-2.3.19.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javassist-3.11.0.GA.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ognl-3.0.6.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/struts2-bootstrap-plugin-2.0.1-20140609.193051-1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/struts2-core-2.3.16.3.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/struts2-dojo-plugin-2.3.16.3.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/xwork-core-2.3.16.3.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/asm-3.3.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/asm-commons-3.3.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/asm-tree-3.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

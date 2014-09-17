@@ -7,11 +7,19 @@
 <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.devMode" value="true" />
 
-<package name="common" namespace="/common" extends="struts-default">
+<package name="default" namespace="/common" extends="struts-default">
 	<action name="login" class="com.srt.login.action.LoginAction">
-	<result name="success">home.jsp</result>
-	<result name="failure">login.jsp</result>
+	<result name="success">common/pages/home.jsp</result>
+	<result name="login">common/pages/login.jsp</result>
 	</action>
+</package>
+
+<package name="common" namespace="/common" extends="struts-default">
+
+<action name="Test" class="com.srt.login.action.LoginAction">
+<result name="success">pages/home.jsp</result>
+<result name="fail">pages/login.jsp</result>
+</action>
 </package>
 
 
